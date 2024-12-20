@@ -33,18 +33,19 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent[100],
-      appBar: AppBar(
-        title: Text('Wallet App', style: GoogleFonts.roboto(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.lightBlueAccent,
-        centerTitle: true,
-        elevation: 5,
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(height: 50),
+              Center(
+                child: Image.asset(
+                  'assets/images/reg.png',
+                  height: 300,
+                ),
+              ),
               Text(
                 'Welcome',
                 style: GoogleFonts.playfairDisplay(
